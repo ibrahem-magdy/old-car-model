@@ -96,3 +96,77 @@ a {
 * {
   box-sizing: border-box;
 }
+.con-error {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+
+  width: 98%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.con-error h3 {
+  margin: 0;
+  color: #474747;
+  font-size: 40px;
+  margin: 15px 0;
+  margin-bottom: 10px;
+}
+.sorry {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+  .con-error h3 {
+    font-size: 20px;
+  }
+  .sorry {
+    font-size: 16px;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .con-error h3 {
+    font-size: 20px;
+  }
+  .sorry {
+    font-size: 16px;
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .con-canvas {
+    display: none;
+  }
+
+  .con-error {
+    display: flex;
+  }
+  html,
+  body {
+    background-color: white;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 791px) {
+  .con-error {
+    display: none;
+  }
+}
